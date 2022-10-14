@@ -1,0 +1,152 @@
+[
+  {
+    "_id": "1",
+    "slug": "max",
+    "title": "BestBuy clone || Awarded 2nd Prize",
+    "tech": ["CSS","JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","JWT","Styled-components","Material UI"],
+    "description": "BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets and Tech-accessories. This repository consist replica of BestBuy.com project by using MERN Stack Technologies",
+    "liveLink": "https://bestbuy-com-clone.vercel.app/",
+    "githubLink": "https://github.com/Himanshu0316/bestbuy.com",
+    "image": "bestbuy-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "bestbuy-one.png",
+        "description": "Homepage with navbar and hero element."
+      },
+      {
+        "screenshot": "bestbuy-two.png",
+        "description": "login page."
+      },
+      {
+        "screenshot": "bestbuy-three.png",
+        "description": "product page ."
+      },
+      {
+        "screenshot": "bestbuy-four.png",
+        "description": " project details page."
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "title": "Bewakoof clone",
+    "tech": ["JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","Tailwind CSS","Material UI"],
+    "description": "A clone of Bewakoof.com which is an E-commerce website where a user can find different accessories for men and women. It is a Full-stack web application for buying clothes and accessories.",
+    "liveLink": "https://heady-rabbits-8957.vercel.app/",
+    "githubLink": "https://github.com/Himanshu0316/bewakoof.com",
+    "image": "bewakoof.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "bewakoof.png",
+        "description": "Homepage with navbar."
+      },
+      {
+        "screenshot": "bewakoof-two.png",
+        "description": "Product."
+      },
+      {
+        "screenshot": "bewakoof-three.png",
+        "description": "Login."
+      },
+      {
+        "screenshot": "bewakoof-four.png",
+        "description": "Cart."
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "title": "Zee5 clone",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "A clone of website Zee5.com, An Ott platform to watch movies, series, and other entertaining content for free or by subscription. ",
+    "liveLink": "https://zee5-clone-23cc72.netlify.app/",
+    "githubLink": "https://github.com/Himanshu0316/Construct_Zee5",
+    "image": "zee-one.png",
+    "isFeatured": false
+  },
+  {
+    "_id": "4",
+    "title": "Naukari-clone",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "naukari.com is an Indian employment website operating in India and Middle East. it is one of the most preferred recruitment platform that provides hiring-related services to corporates/recruiters, placement agencies, and job seekers in India.",
+    "liveLink": "https://thunderous-babka-64d655.netlify.app/",
+    "githubLink": "https://github.com/Himanshu0316/naukariclon",
+    "image": "naukari-one.png",
+    "isFeatured": false
+    
+  },
+  {
+    "_id": "5",
+    "title": "BathBodyWorks",
+    "tech": [
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "JSON-server",
+     "Styled-components"
+    ],
+    "description": "BathBodyWorks is a popular American Brand. BathBodyWorks is a retail store chain which came in E-commerce business to sell their products. This Company sells products like lotions, soap, daily perfumes,candles,etc. BathBodyWorks-clone is a construct week project built by a team of 6 executed in 6 days.",
+    "liveLink": "https://clone-of-bathandbodyworks.netlify.app",
+    "githubLink": "https://github.com/Himanshu0316/bathandbodyworks-clone",
+    "image": "bbd-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "bbd-one.png",
+        "description": "Homepage with navbar element."
+      },
+      {
+        "screenshot": "bbd-two.png",
+        "description": "login page ."
+      },
+      {
+        "screenshot": "bbd-three.png",
+        "description": "product  page ."
+      },
+      {
+        "screenshot": "bbd-four.png",
+        "description": "card page ."
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "title": "Tata-1mg clone",
+    "tech": ["CSS","JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","Firebase","Instamojo","Chakra UI"],
+    "description": "TATA 1mg.com is an e-commerce web application that widely provides e-pharmacy, diagnostics, e-consultation, and healthcare solutions related service all across india",
+    "liveLink": "https://tata1mg-clone-nem201.vercel.app/",
+    "githubLink": "https://github.com/Himanshu0316/humane-shelf-7123",
+    "image": "tata-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "tata-one.png",
+        "description": "Homepage with navbar element."
+      },
+      {
+        "screenshot": "tata-two.png",
+        "description": "product page ."
+      },
+      {
+        "screenshot": "tata-three.png",
+        "description": "Login."
+      },
+      {
+        "screenshot": "tata-four.png",
+        "description": "cart page ."
+      }
+    ]
+  }
+  
+]

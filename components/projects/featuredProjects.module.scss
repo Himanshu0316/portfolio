@@ -1,0 +1,32 @@
+.projects {
+  min-height: 100vh;
+  padding: 50px 15px;
+  overflow: hidden;
+
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+    .innerCarousel {
+      display: flex;
+    }
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 100px 25px;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+    }
+  }
+}

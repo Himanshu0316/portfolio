@@ -1,0 +1,24 @@
+.skill {
+  padding: 50px 15px;
+  .galleryWrap {
+    margin-top: 50px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    padding: 100px 25px;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-gap:20px;
+    }
+  }
+}

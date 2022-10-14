@@ -1,0 +1,22 @@
+.card {
+  transition: background 1s;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  h4 {
+    font-size:15px;
+    color: var(--text-secondary);
+  }
+  time {
+    color: var(--text-tertiary);
+  }
+  }
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin-bottom: unset;
+  }
+  .card h4 {
+    font-size:16px;
+  }
+}

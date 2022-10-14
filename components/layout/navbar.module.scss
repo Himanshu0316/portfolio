@@ -1,0 +1,142 @@
+.navbar {
+  z-index: 2;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  transition: background 0.5s;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+  }
+ 
+
+  .logo {
+    color:  var(--transparent-primary);
+    font-weight: bold;
+    background-color: var(--text-secondary);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: "Parisienne rev=2";
+   
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 220, 0.2) 0%,
+      transparent 100%
+    );
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+      0 1px 5px 0 rgb(0 0 0 / 20%);
+  }
+  .themeLogo{
+    i {
+      font-size: 1.8rem;
+      color: var(--text-secondary);
+      padding: 5px;
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    i {
+      font-size: 2rem;
+      color: var(--text-secondary);
+      padding: 5px;
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    color: red;
+    background-color: var(--transparent-primary);
+    box-shadow: 0 6px 30px 2px rgb(0 0 0 / 3%), 0 3px 15px 1px rgb(0 0 0 / 2%),
+      0 1px 8px 1px rgb(0 0 0 / 1%);
+  }
+}
+
+.navMenu {
+  display: none;
+
+  a {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  a:first-child {
+    border-top: 1px solid var(--border);
+    
+  }
+
+  .linkWrapper a:hover {
+    color: var(--text-tertiary);
+  }
+
+  &.responsive {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 65px;
+    width: 100%;
+    background-color: var(--transparent-primary);
+
+    a {
+      display: block;
+      padding: 25px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: unset;
+    }
+
+    .navMenu {
+      display: flex;
+      width: 55%;
+      margin-left: 30%;
+
+      &.responsive {
+        position: unset;
+      }
+
+      .linkWrapper {
+        padding: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      a {
+        border-bottom: none;
+        padding: 5px;
+        filter: drop-shadow(0px 3px 2px rgb(0 0 0 / 15%));
+      }
+
+      a:first-child {
+        border-top: none;
+      }
+    }
+    .icon {
+      display: none;
+    }
+  }
+}
+

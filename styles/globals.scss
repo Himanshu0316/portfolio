@@ -1,0 +1,63 @@
+@import './colors';
+@import './buttons';
+@import './swiper';
+@import './utils';
+@import './ui';
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--text-secondary);
+}
+::-webkit-scrollbar-thumb {
+  
+  border-radius: 15px;
+  background:var(--text-tertiary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background:var(--transparent-secondary);
+}
+
+#myBtn { 
+  position: fixed; 
+  bottom:20px; 
+  right: 20px;
+  z-index: 99;
+  cursor: pointer; 
+  background-color: transparent;
+}
+#myBtn i{
+  font-size: 40px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--text-secondary);
+}
