@@ -9,7 +9,6 @@ JavaScript, React, Next.js, Sass, framer-motion, swiper
 
 ## Demo
 
-https://rushikesh-gaikwad-portfolio.netlify.app
 
 ## Getting Started
 
@@ -25,7 +24,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 ## Screenshots
 
-![Hero Image](https://i.ibb.co/KjLmbfN/portfolio.png)
+
 
 
 ## Deployment
