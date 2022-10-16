@@ -25,7 +25,7 @@ const About = () => {
             My name is Himanshu.I am 26 years old.I am from Rajasthan. I completed my B.Tech in Automobile trade from KIIT University,Bhubaneswar. Currently I am pursuing a Full Stack Web Development course from MASAI School. My hobbies are cooking and watching movies.
             </p>
             <p>
-            I'm an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developert.
+            I &apos; m an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developert.
             </p>
             
           </div>
