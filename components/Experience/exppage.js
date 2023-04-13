@@ -14,14 +14,9 @@ const Experience = (props) => {
   return (
     <section className={`${classes.exp} mvh-100`} id='exps'>
       <div className={classes.container}>
-        <h2 data-aos='slide-right'>Github Info</h2>
-        <div className={classes.galleryWrap} align="center">
+        <h2 data-aos='slide-right'>Github Calendar</h2>
+        <div className={classes.galleryWrap}>
           <GitHubCalendar username="himanshu0316" />
-          <p align="center" ><img className={classes.gitimage} src="https://github-readme-stats.vercel.app/api/top-langs?username=himanshu0316&show_icons=true&locale=en&layout=compact" alt="himanshu0316" / ></p>
-
-<p align="center" >&nbsp;<img className={classes.gitimage} align="center" src="https://github-readme-stats.vercel.app/api?username=himanshu0316&show_icons=true&locale=en" alt="himanshu0316" / ></p>
-
-<p align="center" ><img className={classes.gitimage} align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=himanshu0316&" alt="himanshu0316" / ></p>
         </div>
       </div>
     </section>

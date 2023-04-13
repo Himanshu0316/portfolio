@@ -80,7 +80,7 @@ const Navbar = (props) => {
                 </a>
               </Link>
               <Link href='/#exps'>
-                <a href='#exps' onClick={closeNav}>Github Info</a>
+                <a href='#exps' onClick={closeNav}>Github Calendar</a>
               </Link>
               
               <Link  href='https://drive.google.com/file/d/1loPDHo4VdCuvDA02Q1F8UJPbY8VNuJ8r/view?usp=sharing'>
