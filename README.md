@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Screenshots
 
 
-![Hero Image](https://i.ibb.co/KjLmbfN/portfolio.png)
+![Hero Image](https://user-images.githubusercontent.com/95962613/231657867-f8b4f3e7-d1b9-45c7-9cca-549256827d5f.png)
 
 ## Deployment
 
