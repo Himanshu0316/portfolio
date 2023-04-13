@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Modal from '../ui/modal/modal';
 import Aos from 'aos';
-import profilePic from '../../public/images/profile.jpg';
+import profilePic from '../../public/images/profile.jpeg';
 import 'aos/dist/aos.css';
 import { motion, AnimatePresence } from 'framer-motion';
 

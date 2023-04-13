@@ -8,6 +8,7 @@ import {
 } from '../util/projects-util';
 import { getAllSkills } from '../util/skills-util';
 import Skills from '../components/Skills/skillPage';
+import Experience from '../components/Experience/exppage';
 
 export default function Home(props) {
   return (
@@ -20,9 +21,11 @@ export default function Home(props) {
         />
       </Head>
       <Hero />
+      <About />
       <FeaturedProjects featuredProjects={props.featuredProjects} />
       <Skills skills={props.skills} />
-      <About />
+      <Experience  />
+      
      
     </>
   );

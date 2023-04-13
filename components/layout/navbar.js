@@ -67,18 +67,22 @@ const Navbar = (props) => {
             }
             id='navMenu'>
             <div className={classes.linkWrapper}>
+            <Link href='/#about'>
+                <a onClick={closeNav}>About</a>
+              </Link>
               <Link href='/#projects'>
                 <a onClick={closeNav}>Projects</a>
               </Link>
-
+            
               <Link href='/#skills'>
                 <a href='#skills' onClick={closeNav}>
                   Skills
                 </a>
               </Link>
-              <Link href='/#about'>
-                <a onClick={closeNav}>About</a>
+              <Link href='/#exps'>
+                <a href='#exps' onClick={closeNav}>Github Info</a>
               </Link>
+              
               <Link  href='https://drive.google.com/file/d/1loPDHo4VdCuvDA02Q1F8UJPbY8VNuJ8r/view?usp=sharing'>
                 <a target='_blank' onClick={closeNav}>Resume</a>
               </Link>

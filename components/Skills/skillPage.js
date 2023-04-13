@@ -14,7 +14,7 @@ const Skills = (props) => {
   return (
     <section className={`${classes.skill} mvh-100`} id='skills'>
       <div className={classes.container}>
-        <h2 data-aos='slide-right'>Skills</h2>
+        <h2 data-aos='slide-right'>Skills & Tools</h2>
         <div className={classes.galleryWrap}>
           <div className={classes.gallery}>
             {skills !== null &&
