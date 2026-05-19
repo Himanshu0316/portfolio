@@ -2,36 +2,320 @@
   {
     "_id": "1",
     "slug": "max",
-    "title": "BestBuy clone || Awarded 2nd Prize",
-    "tech": ["CSS","JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","JWT","Styled-components","Material UI"],
-    "description": "BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets and Tech-accessories. This repository consist replica of BestBuy.com project by using MERN Stack Technologies",
-    "liveLink": "https://bestbuy-com-clone.vercel.app/",
-    "githubLink": "https://github.com/Himanshu0316/bestbuy.com",
-    "image": "bestbuy-one.png",
+    "title": "CodeCreator Technology",
+    "tech": [
+      "Next.js",
+      "JavaScript (ES6+)",
+      "SASS/SCSS",
+      "CSS Modules",
+      "Framer Motion",
+      "Swiper.js",
+      "Lottie React",
+      "Server Components",
+      "App Router",
+      "Bundle Analyzer",
+      "next/image Optimization"
+    ],
+    "description": "Built an SEO-optimized corporate website using Next.js 14 with SSR/SSG architecture spanning 30+ service pages, dynamic blogs, and city-based pages. Integrated WordPress CMS, structured SEO metadata, dark/light themes, and optimized deployment with Docker and Server Components.",
+    "liveLink": "https://codecreatortechnology.com/",
+    "githubLink": "",
+    "image": "codecreator-one.png",
     "isFeatured": true,
     "screenshots": [
       {
-        "screenshot": "bestbuy-one.png",
+        "screenshot": "codecreator-one.png",
         "description": "Homepage with navbar and hero element."
       },
       {
-        "screenshot": "bestbuy-two.png",
-        "description": "login page."
+        "screenshot": "codecreator-two.png",
+        "description": "Digital Marketing page."
       },
       {
-        "screenshot": "bestbuy-three.png",
-        "description": "product page ."
+        "screenshot": "codecreator-three.png",
+        "description": "Career page."
       },
       {
-        "screenshot": "bestbuy-four.png",
-        "description": " project details page."
+        "screenshot": "codecreator-four.png",
+        "description": "Contact page."
       }
     ]
   },
   {
     "_id": "2",
+    "slug": "max",
+    "title": "INDRESH Info Services",
+    "tech": [
+      "ReactJs",
+      "Vite",
+      "JavaScript",
+      "Tailwind CSS",
+      "React Router v6",
+      "ESLint"
+    ],
+    "description": "INDRESH Info Services is a multi-page business website for a technology and consultancy firm, featuring service showcases for IT solutions, ERP/accounting software, overseas admissions, and academic content writing with animated statistics counters and client testimonials. Built with React 19 and Vite, utilizing Tailwind CSS for a modern, mobile-first UI with gradient-rich sections, scroll-triggered animations via Intersection Observer, and React Router for seamless SPA navigation.",
+    "liveLink": "https://indreshdevelopmentservices.online",
+    "githubLink": "",
+    "image": "indresh-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "indresh-one.png",
+        "description": "Homepage with navbar and hero element."
+      },
+      {
+        "screenshot": "indresh-two.png",
+        "description": "About Page"
+      },
+      {
+        "screenshot": "indresh-three.png",
+        "description": "Service Page"
+      },
+      {
+        "screenshot": "indresh-four.png",
+        "description": "Contact Page"
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "slug": "max",
+    "title": "Aviator Admin Dashboard",
+    "tech": [
+  "React",
+  "TypeScript",
+  "Vite",
+  "Material UI (MUI)",
+  "TanStack Query",
+  "Socket.io",
+  "Axios",
+  "Framer Motion",
+  "Recharts",
+  "Zod"
+],
+    "description": "Developed real-time gaming admin dashboard using React + TypeScript with Socket.io for live monitoring, RBAC implementation, hierarchical user management, automated payroll, and financial analytics. Optimized performance with TanStack Query/SWR and built responsive UI using Material UI and Recharts.",
+    "liveLink": "",
+    "githubLink": "",
+    "image": "aviator-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "aviator-one.png",
+        "description": "DashBoard"
+      },
+      {
+        "screenshot": "aviator-two.png",
+        "description": "Live Data"
+      },
+      {
+        "screenshot": "aviator-three.png",
+        "description": "Settings"
+      },
+      {
+        "screenshot": "aviator-four.png",
+        "description": "Reports"
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "slug": "max",
+    "title": "AnonTalky || Deating Admin Dashboard",
+    "tech": [
+      "React",
+      "TypeScript",
+      "MUI",
+      "TanStack Query",
+      "Axios",
+      "Socket.IO",
+      "Zod",
+      "Framer Motion",
+      "JWT Authentication",
+      "XLSX",
+      "MinIO",
+      "ESLint"
+    ],
+    "description": "AnonTalki Admin – A comprehensive admin dashboard for managing an anonymous dating and conversation platform. It provides real-time user & listener management, chat/call monitoring, financial transaction tracking, and advanced analytics with interactive charts. The panel features role-protected routes, and a responsive MUI interface for seamless administrative operations.",
+    "liveLink": "",
+    "githubLink": "",
+    "image": "anon-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "anon-one.png",
+        "description": "DashBoard"
+      },
+      {
+        "screenshot": "anon-two.png",
+        "description": "Listner Manegment"
+      },
+      {
+        "screenshot": "anon-three.png",
+        "description": "Reports & Analytics"
+      },
+      {
+        "screenshot": "anon-four.png",
+        "description": "Offer Manegement"
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "slug": "max",
+    "title": "Altaf Khan || Portfolio Website",
+    "tech": [ "React", "Tailwind CSS", "Framer Motion", "JavaScript", "Swiper.js"],
+    "description": "Designed and developed a premium, high-performance portfolio website using Reactjs and Tailwind CSS to showcase a professional journey in UI/UX design and full-stack",
+    "liveLink": "https://altafkhan-portfolio.netlify.app/",
+    "githubLink": "https://github.com/Himanshu0316/altafkhan_portfolio",
+    "image": "altaf-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "altaf-one.png",
+        "description": "Home"
+      },
+      {
+        "screenshot": "altaf-two.png",
+        "description": "Experince."
+      },
+      {
+        "screenshot": "altaf-three.png",
+        "description": "Services."
+      },
+      {
+        "screenshot": "altaf-four.png",
+        "description": "Contants"
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "slug": "max",
+    "title": "Job Hunt",
+    "tech": [
+      "Reactjs",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase Auth",
+      "Axios",
+      "React Quill",
+      "Swiper",
+      "React Toastify",
+      "Google Places Autocomplete",
+      "ESLint"
+    ],
+    "description": "Job Portal — A full-stack job portal web application with Firebase authentication, featuring job search & filtering, application tracking, user dashboard with applied/favorite jobs & alerts, and a blog section. Containerized with Docker and deployed via a CI/CD pipeline using Jenkins with Discord webhook notifications.",
+    "liveLink": "",
+    "githubLink": "",
+    "image": "job-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "job-one.png",
+        "description": "Homepage with navbar and hero element."
+      },
+      {
+        "screenshot": "job-two.png",
+        "description": "login page."
+      },
+      {
+        "screenshot": "job-three.png",
+        "description": "DashBoard"
+      },
+      {
+        "screenshot": "job-four.png",
+        "description": "Payment page."
+      }
+    ]
+  },
+  {
+    "_id": "12",
+    "slug": "max",
+    "title": "HRMS",
+    "tech": [
+  "React",
+  "TypeScript",
+  "Vite",
+  "Material UI (MUI)",
+  "Axios",
+  "Zod",
+  "TanStack",
+  "framer-motion",
+  "MUI X Data Grid",
+  "Recharts",
+  "Leaflet",
+  "sonner",
+  "MinIO (minio SDK)"
+],
+    "description": "HRMS Admin web app built with React + TypeScript for managing employee operations (attendance, leaves, payroll, assets). Features role-based auth, MUI components, REST API integration, and rich UX with charts, notifications, and theme management.",
+    "liveLink": "",
+    "githubLink": "",
+    "image": "hrms-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "hrms-one.png",
+        "description": "DashBoard"
+      },
+      {
+        "screenshot": "hrms-two.png",
+        "description": "Employee Track page."
+      },
+      {
+        "screenshot": "hrms-three.png",
+        "description": "Add Employee page"
+      },
+      {
+        "screenshot": "hrms-four.png",
+        "description": "Settings page."
+      }
+    ]
+  },
+  {
+    "_id": "13",
+    "slug": "max",
+    "title": "Rajasthan Tourism",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "Rajasthan Travel Guide – A comprehensive travel and tourism website for Rajasthan, featuring detailed information about cities, forts, temples, and tourist attractions. The site offers curated tour packages, travel guides, and seamless booking experiences for hotels, flights, and local transport. Built with Next.js and Tailwind CSS, it delivers a responsive, visually immersive interface for exploring Rajasthan's rich culture and heritage.",
+    "liveLink": "https://www.rajasthanstours.com",
+    "githubLink": "",
+    "image": "rajasthan-one.png",
+    "isFeatured": true,
+    "screenshots": [
+      {
+        "screenshot": "rajasthan-one.png",
+        "description": "Homepage with navbar and hero element."
+      },
+      {
+        "screenshot": "rajasthan-two.png",
+        "description": "Service page."
+      },
+      {
+        "screenshot": "rajasthan-three.png",
+        "description": "Hotel page ."
+      },
+      {
+        "screenshot": "rajasthan-four.png",
+        "description": "About page."
+      }
+    ]
+  },
+  {
+    "_id": "7",
     "title": "Bewakoof clone",
-    "tech": ["JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","Tailwind CSS","Material UI"],
+    "tech": [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "MUI"
+    ],
     "description": "A clone of Bewakoof.com which is an E-commerce website where a user can find different accessories for men and women. It is a Full-stack web application for buying clothes and accessories.",
     "liveLink": "https://heady-rabbits-8957.vercel.app/",
     "githubLink": "https://github.com/Himanshu0316/bewakoof.com",
@@ -57,7 +341,7 @@
     ]
   },
   {
-    "_id": "3",
+    "_id": "8",
     "title": "Zee5 clone",
     "tech": [
       "HTML",
@@ -71,7 +355,7 @@
     "isFeatured": false
   },
   {
-    "_id": "4",
+    "_id": "9",
     "title": "Naukari-clone",
     "tech": [
       "HTML",
@@ -83,10 +367,9 @@
     "githubLink": "https://github.com/Himanshu0316/naukariclon",
     "image": "naukari-one.png",
     "isFeatured": false
-    
   },
   {
-    "_id": "5",
+    "_id": "10",
     "title": "BathBodyWorks",
     "tech": [
       "CSS",
@@ -94,7 +377,7 @@
       "React",
       "Redux",
       "JSON-server",
-     "Styled-components"
+      "Styled-components"
     ],
     "description": "BathBodyWorks is a popular American Brand. BathBodyWorks is a retail store chain which came in E-commerce business to sell their products. This Company sells products like lotions, soap, daily perfumes,candles,etc. BathBodyWorks-clone is a construct week project built by a team of 6 executed in 6 days.",
     "liveLink": "https://clone-of-bathandbodyworks.netlify.app",
@@ -121,9 +404,20 @@
     ]
   },
   {
-    "_id": "6",
+    "_id": "11",
     "title": "Tata-1mg clone",
-    "tech": ["CSS","JavaScript","React","Redux","Node.js", "Express.js", "MongoDB","Firebase","Instamojo","Chakra UI"],
+    "tech": [
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Instamojo",
+      "Chakra UI"
+    ],
     "description": "TATA 1mg.com is an e-commerce web application that widely provides e-pharmacy, diagnostics, e-consultation, and healthcare solutions related service all across india",
     "liveLink": "https://tata1mg-clone-nem201.vercel.app/",
     "githubLink": "https://github.com/Himanshu0316/humane-shelf-7123",
@@ -148,5 +442,5 @@
       }
     ]
   }
-  
+
 ]

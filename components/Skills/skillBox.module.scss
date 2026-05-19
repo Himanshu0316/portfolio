@@ -1,22 +1,84 @@
+.skillWrapper {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  width: 100%;
+
+  // Nth-child colors for light mode hyper-glass effect
+  :global([data-theme='light']) & {
+    &:nth-child(6n+1) .card { --glass-bg: rgba(255, 245, 245, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #e53e3e; }
+    &:nth-child(6n+2) .card { --glass-bg: rgba(240, 255, 244, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #38a169; }
+    &:nth-child(6n+3) .card { --glass-bg: rgba(235, 248, 255, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #3182ce; }
+    &:nth-child(6n+4) .card { --glass-bg: rgba(255, 250, 240, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #dd6b20; }
+    &:nth-child(6n+5) .card { --glass-bg: rgba(250, 245, 255, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #805ad5; }
+    &:nth-child(6n+6) .card { --glass-bg: rgba(230, 255, 250, 0.25); --glass-border: rgba(255, 255, 255, 0.8); --text-color: #319795; }
+  }
+}
+
 .card {
-  transition: background 1s;
-  min-height: 20px;
-  box-sizing: border-box;
-  padding-top: 15px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  background: var(--glass-bg, var(--background-card));
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  min-width: 140px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+
+  // Dark Mode Adjustments for Hyper-Glass
+  :global([data-theme='dark']) & {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08); // Fixed subtle border for reflection
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 30px var(--accent), inset 0 0 10px rgba(255, 255, 255, 0.2);
+      border-color: var(--accent);
+      
+      h4 {
+        color: var(--accent);
+        text-shadow: 0 0 10px var(--accent);
+      }
+    }
+  }
+
   h4 {
-    font-size:15px;
-    color: var(--text-secondary);
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--text-color, var(--text-primary));
+    transition: all 0.3s;
+    z-index: 2;
   }
-  time {
-    color: var(--text-tertiary);
+
+  img {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 2;
   }
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    img { transform: scale(1.15) rotate(5deg); }
   }
+}
 
 @media only screen and (min-width: 768px) {
   .card {
-    margin-bottom: unset;
-  }
-  .card h4 {
-    font-size:16px;
+    padding: 35px 25px;
+    h4 { font-size: 1.2rem; }
   }
 }

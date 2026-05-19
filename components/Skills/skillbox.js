@@ -16,7 +16,7 @@ const SkillBox = (props) => {
       data-aos="zoom-in-up"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="btn-filled-dark"
+      className={classes.skillWrapper}
     >
       <div className={classes.card}>
       <Image

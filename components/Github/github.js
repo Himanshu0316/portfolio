@@ -4,7 +4,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import GitHubCalendar from 'react-github-calendar';
 import Image from "next/image";
-const Experience = (props) => {
+const Github = (props) => {
   const { exps } = props;
   
   useEffect(() => {
@@ -22,4 +22,4 @@ const Experience = (props) => {
     </section>
   );
 };
-export default Experience;
+export default Github;

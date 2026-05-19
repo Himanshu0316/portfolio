@@ -33,7 +33,7 @@ const ProjectItem = (props) => {
             Website
           </a>
         )}
-        <Link href={`/projects/${project._id}`}>
+        <Link legacyBehavior href={`/projects/${project._id}`}>
           <a>
             <i className='fa fa-circle-info'></i>
             Project details

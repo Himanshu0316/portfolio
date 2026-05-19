@@ -1,0 +1,243 @@
+.experienceSection {
+  padding: 100px 15px;
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  background: transparent;
+
+  .neonBgWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, var(--accent) 0%, transparent 70%);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+    animation: pulseGradient 6s ease-in-out infinite alternate;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+
+    @media only screen and (min-width: 1200px) {
+      padding: 0 70px;
+    }
+
+    h2.neonHeading {
+      margin-bottom: 60px;
+      text-align: center;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: none;
+    }
+  }
+}
+
+.sliderContainer {
+  width: 100%;
+  padding-bottom: 50px;
+
+  :global(.swiper) {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  :global(.swiper-slide) {
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+    display: flex;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    background: var(--accent);
+    opacity: 0.4;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background: var(--accent);
+    opacity: 1;
+    width: 25px;
+    box-shadow: 0 0 15px var(--accent);
+  }
+
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    color: var(--accent);
+    filter: drop-shadow(0 0 8px var(--accent));
+    transition: transform 0.2s;
+    &::after {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.swiperSlideCustom {
+  border-radius: 20px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.timelineContent {
+  background: var(--background-card);
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.4s ease;
+  height: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  // Elegant soft glowing orb element inside the card
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 250px;
+    height: 250px;
+    background: var(--card-accent);
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.1;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  // Clean soft style for Light Mode
+  :global([data-theme='light']) & {
+    background: var(--light-bg);
+    border: 1px solid var(--light-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+
+    &:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      transform: translateY(-8px);
+      border-color: var(--card-accent);
+      &::before {
+        opacity: 0.25;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // Sleek deep style for Dark Mode
+  :global([data-theme='dark']) & {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 2px 20px rgba(255,255,255,0.02);
+      transform: translateY(-8px);
+      &::before {
+        opacity: 0.25;
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  .timelineHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 0;
+      color: var(--text-primary);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .timelineDate {
+      font-size: 0.85rem;
+      color: #fff;
+      background: var(--card-accent);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-weight: 700;
+      display: inline-block;
+      width: fit-content;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    color: var(--card-accent);
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 18px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 0.75rem;
+
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--card-accent);
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: transform 0.3s;
+      }
+
+      &:hover::before {
+        transform: translateX(5px);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@keyframes pulseGradient {
+  0% { transform: scale(1); opacity: 0.05; }
+  100% { transform: scale(1.4); opacity: 0.2; }
+}

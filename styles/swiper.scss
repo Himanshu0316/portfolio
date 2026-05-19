@@ -38,11 +38,59 @@
 .projectDetail {
   .swiper {
     margin: 0px;
+    padding-bottom: 50px;
   }
 
   .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    background: var(--background-card);
+    border: 1px solid var(--border-card);
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    &::after {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-tertiary);
+    }
+
+    &:hover {
+      background: var(--text-tertiary);
+      border-color: var(--text-tertiary);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--background-card) !important;
+    border: 1px solid var(--border-card);
+    color: var(--text-secondary);
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--text-tertiary) !important;
+    border-color: var(--text-tertiary);
+    color: #fff;
+    transform: scale(1.1);
   }
 }

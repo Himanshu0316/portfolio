@@ -2,8 +2,12 @@ import "../styles/globals.scss";
 import Head from "next/head";
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/footer";
+import CustomCursor from "../components/ui/CustomCursor";
 
 import { useEffect, useState } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState("dark");
@@ -28,14 +32,16 @@ function MyApp({ Component, pageProps }) {
   };
   
   useEffect(()=>{
-
+    Aos.init({ duration: 800, once: true });
     window.addEventListener('scroll', toggleVisible);
 
+    return () => window.removeEventListener('scroll', toggleVisible);
   },[])
 
   return (
     <>
       <div className="app" data-theme={theme}>
+        <CustomCursor />
         <Navbar theme={setTheme}>
           <Head>
             <meta

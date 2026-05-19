@@ -55,7 +55,7 @@ const Navbar = (props) => {
           sticky ? `${classes.navbar}  ${classes.sticky}` : `${classes.navbar} `
         }>
         <div className={classes.container}>
-          <Link href='/'>
+          <Link legacyBehavior href='/'>
             <a className={classes.logo}>Hs</a>
           </Link>
 
@@ -67,23 +67,20 @@ const Navbar = (props) => {
             }
             id='navMenu'>
             <div className={classes.linkWrapper}>
-            <Link href='/#about'>
-                <a onClick={closeNav}>About</a>
+              <Link legacyBehavior href='/#experience'>
+                <a onClick={closeNav}>Experience</a>
               </Link>
-              <Link href='/#projects'>
+              <Link legacyBehavior href='/#services'>
+                <a onClick={closeNav}>Expertise</a>
+              </Link>
+              <Link legacyBehavior href='/#projects'>
                 <a onClick={closeNav}>Projects</a>
               </Link>
-            
-              <Link href='/#skills'>
-                <a href='#skills' onClick={closeNav}>
-                  Skills
-                </a>
-              </Link>
-              <Link href='/#exps'>
-                <a href='#exps' onClick={closeNav}>Github Calendar</a>
+              <Link legacyBehavior href='/#skills'>
+                <a onClick={closeNav}>Skills</a>
               </Link>
               
-              <Link  href='https://drive.google.com/file/d/1loPDHo4VdCuvDA02Q1F8UJPbY8VNuJ8r/view?usp=sharing'>
+              <Link legacyBehavior href='https://drive.google.com/file/d/1loPDHo4VdCuvDA02Q1F8UJPbY8VNuJ8r/view?usp=sharing'>
                 <a target='_blank' onClick={closeNav}>Resume</a>
               </Link>
               <a

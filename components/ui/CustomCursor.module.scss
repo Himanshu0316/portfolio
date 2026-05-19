@@ -1,0 +1,31 @@
+.cursorRing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #00f2fe;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.8), inset 0 0 5px rgba(0, 242, 254, 0.5);
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #4facfe;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 1);
+}
+
+@media (max-width: 768px) {
+  .cursorRing, .cursorDot {
+    display: none;
+  }
+}

@@ -36,32 +36,39 @@
           "logoImg":"https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
           "title":"MongoDB"  
         },
-          {
-            "id":9,
-            "logoImg":"https://cdn.worldvectorlogo.com/logos/styled-components-1.svg",
-            "title":"Styled-Components"  
-          }, {
+         {
+          "id":9,
+          "logoImg":"https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+          "title":"Firebase"  
+        },
+         {
             "id":10,
             "logoImg":"https://cdn-icons-png.flaticon.com/512/6567/6567915.png",
             "title":"Git"  
-          }, {
+          },
+          {
             "id":11,
-            "logoImg":"https://cdn-icons-png.flaticon.com/512/1051/1051326.png",
-            "title":"GitHub"  
+            "logoImg":"https://cdn-icons-png.flaticon.com/512/6567/6567915.png",
+            "title":"Typescripts"  
           },
           {
             "id":12,
             "logoImg":"https://www.svgrepo.com/show/354048/material-ui.svg",
             "title":"Matarial UI"  
           },
-           {
+          {
             "id":13,
-            "logoImg":"https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
-            "title":"Redis"  
+            "logoImg":"https://www.svgrepo.com/show/306466/next-dot-js.svg",
+            "title":"Socket.io"  
           },
           {
             "id":14,
             "logoImg":"https://www.svgrepo.com/show/306466/next-dot-js.svg",
             "title":"Next.js"  
+          },
+          {
+            "id":15,
+            "logoImg":"https://www.svgrepo.com/show/306466/next-dot-js.svg",
+            "title":"TailwindCss"  
           }
 ]

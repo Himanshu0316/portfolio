@@ -1,18 +1,11 @@
 import classes from './skillPage.module.scss';
-import { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import SkillBox from './skillbox';
 
 const Skills = (props) => {
   const { skills } = props;
   
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
   return (
-    <section className={`${classes.skill} mvh-100`} id='skills'>
+    <section className={`${classes.skill} mvh-100`} id='skills' style={{backgroundImage: "var(--skills-bg)", backgroundSize: 'cover'}}>
       <div className={classes.container}>
         <h2 data-aos='slide-right'>Skills & Tools</h2>
         <div className={classes.galleryWrap}>

@@ -1,32 +1,32 @@
 import Head from 'next/head';
 import Hero from '../components/home/hero';
 import FeaturedProjects from '../components/projects/featuredProjects';
-import About from '../components/home/about';
+import Experience from '../components/Experience/experience';
 import {
   getFeaturedProjects,
   getNonFeaturedProjects,
 } from '../util/projects-util';
 import { getAllSkills } from '../util/skills-util';
 import Skills from '../components/Skills/skillPage';
-import Experience from '../components/Experience/exppage';
+import Achievements from '../components/Achievements/Achievements';
+import Services from '../components/Services/services';
 
 export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Himanshu &lt;Web Developer /&gt;</title>
+        <title>Himanshu | Full Stack Web Developer</title>
         <meta
           name='description'
-          content='My personal web development portfolio including various frontend and fullstack projects. Tech-Stack: React, Next.js, Redux, Typescript, Node.js, Express, MongoDB, Bootstrap.'
+          content='Full Stack Developer specializing in React, Next.js, Node.js, and MERN stack. View my portfolio and projects.'
         />
       </Head>
       <Hero />
-      <About />
+      <Experience />
+      <Services />
       <FeaturedProjects featuredProjects={props.featuredProjects} />
       <Skills skills={props.skills} />
-      <Experience  />
-      
-     
+      <Achievements />
     </>
   );
 }

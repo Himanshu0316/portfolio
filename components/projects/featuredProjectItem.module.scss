@@ -1,99 +1,238 @@
-.project {
-  background-color: var(--background-card);
-  transition: background 1s;
-  border: 1px solid var(--border-light);
-  border-radius: 5px;
-  padding: 25px;
-  min-width: 100%;
+.projectCard {
+  --current-bg: var(--slide-bg);
+  --current-accent: var(--slide-accent);
 
-  h3 {
-    margin-bottom: 0;
-    color: var(--text-secondary);
+  background-color: var(--current-bg);
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+
+  :global([data-theme='dark']) & {
+    --current-bg: var(--dark-bg);
+    --current-accent: var(--dark-accent);
+    background-color: var(--current-bg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  small {
-    font-style: italic;
-    color: var(--text-tertiary);
-  
-  }
+  // Crosshair dashed layout lines a.k.a design grid
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45%; // divides left/right
+    bottom: 0;
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    pointer-events: none;
 
-  .columnLeft {
-    .description {
-      margin: 25px 0;
-    }
-
-    .projectLinks {
-      margin-top: auto;
-      a {
-        margin-right: 15px;
-        color: var(--accent);
-        display: block;
-        padding: 15px 15px 15px 0;
-      }
-
-      a:hover {
-        color: var(--text-primary);
-      }
-
-      i {
-        width: 20px;
-        margin-right: 5px;
-        color: var(--text-primary);
-      }
+    :global([data-theme='dark']) & {
+      border-left: 1px dashed rgba(255, 255, 255, 0.1);
     }
   }
 
-  .columnRight {
-    max-width: 700px;
-    margin: 25px auto 0;
-
-    .card {
-      pointer-events: none;
-      border: 1px solid #ffffff0d;
-      border-radius: 5px;
-      overflow: hidden;
-
-      img {
-        height: 100%;
-        border-radius: 5px;
-      }
-
-      //NEXT.JS's img spans
-      span {
-        display: block !important;
-      }
-    }
+  .circleTopLeft {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    background: var(--current-accent);
+    border-radius: 50%;
+    opacity: 0.08;
+    z-index: 0;
   }
 
-  @media only screen and (min-width: 768px) {
-    .row {
-      display: flex;
-    }
+  .circleBottomLeft {
+    position: absolute;
+    bottom: -60px;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: var(--current-accent);
+    border-radius: 50%;
+    opacity: 0.05;
+    z-index: 0;
+  }
 
-    .columnLeft {
-      order: 1;
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      // padding-right: 15px;
-    }
-
-    .columnRight {
-      order: 2;
-      width: 58%;
-      margin: 0;
-      margin-left: auto;
-    }
-    small {
-    width:38%;
+  .cardContent {
+    position: relative;
+    z-index: 1;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftSide {
+    width: 45%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: var(--current-accent);
+      margin: 0 0 20px 0;
+      line-height: 1.2;
+    }
+
+    .techStack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+
+      .techTag {
+        background: rgba(255, 255, 255, 0.8);
+        color: var(--current-accent);
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 400;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+        :global([data-theme='dark']) & {
+          background: rgba(255, 255, 255, 0.08);
+          color: var(--current-accent);
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+      }
+    }
+
+    .description {
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 1.6;
+      margin: 0 0 40px 0;
+      max-width: 90%;
+
+      :global([data-theme='dark']) & {
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+
+    .actionArea {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .viewProjectBtn {
+        background: #1B1E28;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        
+        :global([data-theme='dark']) & {
+          background: var(--current-accent);
+          color: #111;
+        }
+
+        .arrow {
+          transition: transform 0.3s;
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+          
+          .arrow {
+            transform: translateX(4px);
+          }
+        }
+      }
+
+      .socialLinks {
+        display: flex;
+        gap: 15px;
+
+        .iconLink {
+          color: var(--current-accent);
+          font-size: 1.4rem;
+          transition: transform 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
     }
   }
 
-  @media only screen and (min-width: 1020px) {
-    .projectLinks {
-      display: flex;
-      flex-direction: row;
+  .rightSide {
+    width: 55%;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .imageWrapper {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      
+      .projectImg {
+        object-fit: cover;
+        object-position: top center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Responsive layout
+@media only screen and (max-width: 900px) {
+  .projectCard {
+    height: auto;
+    
+    &::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      border-left: none;
+      border-top: 1px dashed rgba(0, 0, 0, 0.1);
+      
+      :global([data-theme='dark']) & {
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .cardContent {
+      flex-direction: column;
+    }
+
+    .leftSide {
+      width: 100%;
+      padding: 40px 30px;
+
+      .title {
+        font-size: 2rem;
+      }
+    }
+
+    .rightSide {
+      width: 100%;
+      height: 350px;
+      padding: 0 30px 40px 30px;
     }
   }
 }
