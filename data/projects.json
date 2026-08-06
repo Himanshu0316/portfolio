@@ -497,7 +497,6 @@
   "MongoDB",
   "Mongoose",
   "Socket.IO",
-  "LiveKit",
   "Tailwind CSS",
   "Redux Toolkit",
   "React Query",
@@ -505,8 +504,8 @@
   "Docker"
 ],
     "description": "Enterprise-grade multi-tenant SaaS Inventory Management System with real-time inventory tracking, warehouse management, subscription billing, dynamic admin controls, and AI-powered analytics built for high-volume businesses.",
-    "liveLink": "https://healthy-baba-web.vercel.app/",
-    "githubLink": "https://github.com/Himanshu0316/HealthyBaba",
+    "liveLink":"https://ms-inventory-web-sandy.vercel.app/",
+    "githubLink": "https://github.com/Himanshu0316/ms-inventory",
     "image": "tata-one.png",
     "isFeatured": true,
     "screenshots": [
